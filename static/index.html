@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+		<title>UENP NoSQL Benchmark</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+
+<body>
+	
+	<script src="main.js"></script>
+	<div id="banner"><img src = "logo.png"/><h1></h1></div>
+	<div id="menu"><m>Sobre | Contato</m></div>
+	<div id="main">
+			<form id="form" action="javascript:post()" method="post">
+				<a1>Executar benchmark</a1><br><br>
+				<a2>1. Selecione o número de operações:</a2><br>
+				<a3>
+					Operações: <input name="operationcount" id = "operationcount" value="100" type="text"/>
+				</a3><br><br>
+				
+				<a2>2. Selecione o framework/linguagem:</a2><br>
+				<a3>
+					<input name="languagetype" value="http://www.uenpjpa" type="radio" checked="true">Java JPA</input>
+					<input name="languagetype" value="http://www.uenpjdo" type="radio">Java JDO</input>
+					<input name="languagetype" value="http://www.uenpjava" type="radio">Java (biblioteca padrão)</input><br>
+					<input name="languagetype" value="http://www.uenppython" type="radio">Python (ndb)</input>
+					<input name="languagetype" value="http://www.uenpgo" type="radio">Go</input>
+				</a3><br><br>
+				
+				<a2>3. Selecione o esquema:</a2><br>
+				<a3>
+					<input name="schema" value="1" type="radio">Orientado a comentários</input><br>
+					<input name="schema" value="2" type="radio" checked="true">Orientado a usuários</input>
+				</a3><br><br>
+				
+				<a2>4. Selecione o workload:</a2><br>
+				<a3>
+					<input name="workload" value="a" type="radio" checked="true">A - Update heavy workload (muitas atualizações)</input><br>
+					<input name="workload" value="b" type="radio">B - Read mostly workload (principalmente leitura)</input><br>
+					<input name="workload" value="c" type="radio">C - Read only (somente leitura)</input><br>
+					<input name="workload" value="w" type="radio">W - Write only (somente escrita)</input>
+				</a3><br><br>
+				
+				
+				<input name="submit" type="submit" value="Executar"/>
+				
+				<input name="writes" id = "writes" type="hidden" value="0"/>
+				<input name="reads"  id = "reads" type="hidden" value="0"/>
+				
+			</form>
+	</div>
+	<div id="resultsFrameDiv" >
+		<iframe src="" name = "resultsFrame"></iframe>
+	</div>
+	
+</body>
+
+</html>

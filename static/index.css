@@ -1,0 +1,67 @@
+
+#banner {
+    /* background-color:black; */
+    color:white;
+    text-align:left;
+    padding:2px;
+}
+
+m{
+    color: black;
+	height:20px;
+	width:400px;
+	text-align:center;
+	font-family: "Calibri";
+}
+
+a1{
+    color: black;
+	height:20px;
+	width:400px;
+	text-align:left;
+	font-family: "Calibri";
+	font-size:22px;
+	font-weight: bold;
+}
+
+a2{
+    color: black;
+	text-align:left;
+	font-family: "Calibri";
+	font-weight: bold;
+	/* background-color:#eeeeee; */
+}
+
+a3{
+    color: black;
+	text-align:left;
+	font-family: "Calibri";
+}
+
+#menu {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:20px;
+    width:800;
+    float:top;
+    padding:5px; 
+	text-align:center-left;
+}
+#main {
+    width:400px;
+	height:500px;
+    float:left;
+    padding:50px; 
+}
+#frame {
+	width:700px;
+	height:500px;
+	color: white;
+	float:left;
+    /* clear:both; */
+    text-align:left;
+    padding:5px; 
+	background-color:gray;
+}
+
+
